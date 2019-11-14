@@ -1,0 +1,10 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 20pt;
+}
+
+main {
+  flex-grow: 2;
+}
