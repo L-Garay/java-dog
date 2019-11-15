@@ -21,10 +21,18 @@
             <h1>Who's a good boy?</h1>
           </div>
           <div class="col-12 d-flex justify-content-around mt-4 mb-5">
-            <button class="btn btn-info">Lazer</button>
-            <button class="btn btn-info">Blazer</button>
-            <button class="btn btn-info">Peach</button>
-            <button class="btn btn-info">Daisy</button>
+            <button class="btn btn-info" onclick="setActiveDog('lazer')">
+              Lazer
+            </button>
+            <button class="btn btn-info" onclick="setActiveDog('blazer')">
+              Blazer
+            </button>
+            <button class="btn btn-info" onclick="setActiveDog('peach')">
+              Peach
+            </button>
+            <button class="btn btn-info" onclick="setActiveDog('daisy')">
+              Daisy
+            </button>
           </div>
         </div>
       </div>
@@ -33,16 +41,35 @@
       <div class="container-fluid mt-5">
         <div class="row">
           <div class="col-12 col-md-6 d-flex justify-content-end pr-4">
-            <img src="//placehold.it/200x200" alt="dog mood" class="w-50" />
+            <img
+              src="//placehold.it/200x200"
+              alt="dog mood"
+              class="w-50"
+              id="dog-pic"
+            />
           </div>
           <div class="col-12 col-md-6">
-            <h1>Name: <span></span></h1>
-            <h1>Status: <span></span></h1>
-            <h1>Treats: <span></span></h1>
-            <h1>Pets: <span></span></h1>
-            <button class="btn btn-success d-block mb-2">Give Treat</button>
-            <button class="btn btn-success d-block mb-2">Give Pet</button>
-            <button class="btn btn-danger d-block">Pull Tail</button>
+            <h1>Name: <span id="dog-name"></span></h1>
+            <h1>Status: <span id="dog-status"></span></h1>
+            <h1>Treats: <span id="dog-treats"></span></h1>
+            <h1>Pets: <span id="dog-pets"></span></h1>
+            <button
+              class="btn btn-success d-block mb-2"
+              id="treat-button"
+              onclick="treat()"
+            >
+              Give Treat
+            </button>
+            <button
+              class="btn btn-success d-block mb-2"
+              id="pet-button"
+              onclick="pet()"
+            >
+              Give Pet
+            </button>
+            <button class="btn btn-danger d-block" onclick="pullTail()">
+              Pull Tail
+            </button>
           </div>
         </div>
       </div>
